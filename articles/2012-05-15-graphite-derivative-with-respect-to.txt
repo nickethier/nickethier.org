@@ -2,7 +2,7 @@
 date: 15/05/2012
 title: "Graphite: Derivative With Respect To"
 
-After reading some of [Jason Dixon's Unhelpful Graphite Tips](http://obfuscurity.com/Tags/Graphite), I wanted to share on of my own. Graphite has the derivative function but it takes the derivative with respect to time. Sometimes thise isn't what you want... 
+After reading some of [Jason Dixon's Unhelpful Graphite Tips](http://obfuscurity.com/Tags/Graphite), I wanted to share one of my own. Graphite has the derivative function, but it takes the derivative with respect to time. Sometimes thise isn't what you want... 
 
 For example, we used to measure cpu utilization by sampling the /proc/stat file twice then taking the difference and calculating the utilization over that sample. We did it this way so we could get very fine grained details about what the cpu was doing. Just knowing a cpu is at 100% utilization doesn't mean much. 100% user time is a much different issue than %100 iowait.
 
