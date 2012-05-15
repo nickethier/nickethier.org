@@ -3,10 +3,24 @@
   <head>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){$("img").parent().css("text-align", "center");});
+    </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <title><%= title %></title>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Me</a></li>
+        <li><a href="/archives">Posts</a></li>
+      </ul>
+    </nav>
+    <header>
+     <h1> Nick Ethier: I'm addicted to metrics...</h1>
+    </header>
     <section>
       <%= yield %> 
     </section>
